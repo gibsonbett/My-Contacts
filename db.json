@@ -1,0 +1,20 @@
+{
+    "contacts": [
+        {
+            "id": 1,
+            "logo": "/public/images/1657087261074.jpg",
+            "firstname": "Gibson",
+            "lastname": "Bett",
+            "phone": "0712345678",
+            "email": "gibson.bett@gmail.com"
+        },
+        {
+            "id": 2,
+            "logo": "/public/images/1657087261074.jpg",
+            "firstname": "Gibson",
+            "lastname": "Bett",
+            "phone": "0712345678",
+            "email": "gibson.bett@gmail.com"
+        }
+    ]
+}
