@@ -4,7 +4,7 @@ function Search(){
 
 return (
     <div>
-        
+        Search list test
     </div>
 )
 

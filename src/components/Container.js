@@ -1,7 +1,6 @@
 import React from "react";
 import Search from "./Search";
-import AddContact from "./AddContact.JS";
-import DarkMode from "./DarkMode";
+import AddContact from "./AddContact";
 
 function Container(){
 
@@ -9,7 +8,7 @@ function Container(){
     return(
         <div>
             <Search/>
-            <DarkMode/>
+            <AddContact/>
         </div>
     )
 }

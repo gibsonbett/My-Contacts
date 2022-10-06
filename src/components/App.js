@@ -1,18 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
 import Container from './Container';
-import ContactList from './ContactList';
+import ContactsPage from './ContactsPage';
 
 function App() {
 
-
-
   return (
-    <div className="App">
-      <Container/>
-      <ContactList/>
-    </div>
-  );
+  <div className=''>
+          <p> App test</p>
+       <Container/>
+      <ContactsPage/>
+  </div>
+  )
 }
 
 export default App;
