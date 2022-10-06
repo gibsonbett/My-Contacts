@@ -1,10 +1,18 @@
 import React from "react";
 
 function Search(){
-
+    function handleSearch(e){
+        setSearch(e.target.value)
+    }
 return (
-    <div>
-        Search list test
+    <div className="">
+      <input
+        type="text"
+        placeholder="Search Contact"
+        onChange={handleSearch}
+        
+      />
+      <i className=""></i>
     </div>
 )
 
