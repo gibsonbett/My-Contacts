@@ -1,4 +1,3 @@
-import Container from './Container';
 import ContactsPage from './ContactsPage';
 
 function App() {
@@ -6,7 +5,6 @@ function App() {
   return (
   <div className=''>
           <p> App test</p>
-       <Container/>
       <ContactsPage/>
   </div>
   )
