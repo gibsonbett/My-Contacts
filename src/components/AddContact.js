@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Redirect, useHistory } from "react-router-dom";
 
 function AddContact(addedContact, handleNewContact) {
@@ -11,37 +11,35 @@ function AddContact(addedContact, handleNewContact) {
   });
 
   function handleChange(e) {
-    // console.log(e.target.value);
+
     const name = e.target.name;
-    console.log(e.target.name)
+    console.log(e.target.name);
     let value = e.target.value;
     setNewContact({ ...newContact, [name]: value });
   }
   function handleSubmit(e) {
     e.preventDefault();
-    fetch('http://localhost:3000/contacts',{
-      method:"POST",
-      headers:{
-        "Content-Type":"application/json"
+    fetch("http://localhost:3000/contacts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-      body:JSON.stringify(newContact)
+      body: JSON.stringify(newContact),
     })
-    .then(res=>res.json())
-    .then(data=>{
-      console.log(data)
-    })
-    handleNewContact()
-    history.push("/")
-}
+      .then((res) => res.json())
+      .then((data) => (data));
+    handleNewContact();
+    history.push("/");
+  }
 
-if (!addedContact) 
-return <Redirect to="/" />;
+  if (!addedContact) return <Redirect to="/ContactsPage" />;
   return (
     <>
-      <div>
+      <div className="input_items">
         <form onSubmit={handleSubmit} className="contacts">
           <label>
             First Name :{" "}
+            <br/>
             <input
               onChange={handleChange}
               className="formInput"
@@ -50,7 +48,6 @@ return <Redirect to="/" />;
               name="firstname"
             />
           </label>
-
           <label>
             Second Name :{" "}
             <input
@@ -61,7 +58,6 @@ return <Redirect to="/" />;
               name="lastname"
             />
           </label>
-
           <label>
             Phone :{" "}
             <input
@@ -72,7 +68,6 @@ return <Redirect to="/" />;
               name="phone"
             />
           </label>
-
           <label>
             Email :{" "}
             <input
@@ -84,7 +79,7 @@ return <Redirect to="/" />;
             />
           </label>
           <input
-            // style={{ width: "100px", marginTop: "30px", marginLeft: "280px" }}
+            id="addbtn"
             type="submit"
             value="Add to Contacts"
           />
