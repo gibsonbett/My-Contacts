@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import ContactList from "./ContactList";
 function ContactsPage({contacts, search, setContacts, setSearch}) {
 
