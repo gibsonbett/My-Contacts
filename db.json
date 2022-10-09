@@ -50,13 +50,6 @@
       "email": "mamagibu@yahoo.com"
     },
     {
-      "id": 8,
-      "firstname": "My",
-      "lastname": "Love",
-      "phone": "072238678",
-      "email": "her.name@gmail.com"
-    },
-    {
       "id": 9,
       "firstname": "John",
       "lastname": "Doe",
@@ -78,18 +71,18 @@
       "email": "erling.haaland@gmail.com"
     },
     {
-      "firstname": "dh",
-      "lastname": "shshsddh",
+      "firstname": "ddddddddd",
+      "lastname": "ddddddddd",
       "phone": "33333",
-      "email": "fff@nonesenseddehj",
-      "id": 15
+      "email": "ccedc",
+      "id": 12
     },
     {
-      "firstname": "gsahdscvdsh",
-      "lastname": "bdchbvhdcv",
-      "phone": "",
-      "email": "bchsvchdsc",
-      "id": 16
+      "firstname": "33333333",
+      "lastname": "33333333333",
+      "phone": "333333333",
+      "email": "dd3dd@dddd",
+      "id": 13
     }
   ]
 }
