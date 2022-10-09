@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Redirect, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-function AddContact(addedContact, handleNewContact) {
+function AddContact({ handleNewContact }) {
   const history = useHistory();
   const [newContact, setNewContact] = useState({
     firstname: "",
@@ -11,9 +11,8 @@ function AddContact(addedContact, handleNewContact) {
   });
 
   function handleChange(e) {
-
-    const name = e.target.name;
-    console.log(e.target.name);
+    let name = e.target.name;
+    console.log(e.target.value);
     let value = e.target.value;
     setNewContact({ ...newContact, [name]: value });
   }
@@ -27,25 +26,24 @@ function AddContact(addedContact, handleNewContact) {
       body: JSON.stringify(newContact),
     })
       .then((res) => res.json())
-      .then((data) => (data));
+      .then((data) => console.log(data));
     handleNewContact();
-    history.push("/");
+    history.push("/contacts");
   }
 
-  if (!addedContact) return <Redirect to="/ContactsPage" />;
+  // if (!addedContact) return <Redirect to="/contacts" />;
   return (
     <>
       <div className="input_items">
         <form onSubmit={handleSubmit} className="contacts">
           <label>
-            First Name :{" "}
-            <br/>
+            First Name : <br />
             <input
               onChange={handleChange}
               className="formInput"
               type="text"
               placeholder="Enter first name"
-              name="firstname"
+              name="firstname" required
             />
           </label>
           <label>
@@ -63,9 +61,9 @@ function AddContact(addedContact, handleNewContact) {
             <input
               onChange={handleChange}
               className="formInput"
-              type="text"
+              type="number"
               placeholder="Enter phone number"
-              name="phone"
+              name="phone" required
             />
           </label>
           <label>
@@ -73,16 +71,12 @@ function AddContact(addedContact, handleNewContact) {
             <input
               onChange={handleChange}
               className="formInput"
-              type="text"
+              type="email"
               placeholder="Enter email"
               name="email"
             />
           </label>
-          <input
-            id="addbtn"
-            type="submit"
-            value="Add to Contacts"
-          />
+          <input id="addbtn" type="submit" value="Add to Contacts" />
         </form>
       </div>
     </>
