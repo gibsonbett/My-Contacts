@@ -2,71 +2,158 @@
   box-sizing: border-box;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-.contactList {
-  /* display: flex; */
-  justify-content: center;
+}
+#home{
+  color: white;
+  padding: 100px;
+  height: 100vh;
+
+  
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background: #34495e;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 1);
+
+
+}
+#nav_items{
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
 }
 
 .contact {
+  margin-top: 30px;
+  padding: 10px;
   display: flex;
   justify-content: flex-start;
   margin-left: 100px;
   border-collapse: collapse;
+  /* background: #a0a8ae; */
+  border-style: outset;
+  background-color: rgba(0,0,0,.5);
+}
+#nav_items:hover{
+  /* background: #b7c1c9; */
+  /* position: absolute; */
+  color: #222;
+  opacity: 70%;
+  height: 100%;
+  z-index: 0;
+  background: #1abc9c;
+  border-radius: 8px;
+  transition: all .5s ease 0s;
+}
+.contactlist{
+  padding: 100px;
+  color: white;
+}
+.contact_item{
+  color: black;
+  padding: 10px;
 }
 
-th {
+#search{
+  color: white;
+  display: inline;
+  position: fixed;
+  overflow: hidden;
+}
+
+tr {
+  margin-top: 30px;
+  padding: 10px;
   display: flex;
-  /* flex-direction: column; */
-  align-items: flex-start;
-  border: 1px solid;
-  width: 100%;
+  justify-content: flex-start;
+  margin-left: 100px;
   border-collapse: collapse;
+  background: #a0a8ae;
+
 }
 
 label {
-  background: #b7c1c9;
-  padding: 12px;
+  position: relative;
+  padding: 22px;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
+
 }
-
-
+.input_items{
+  padding-top: 90px;
+  height: 100vh;
+  background: #b7c1c9;
+}
 input {
   border-radius: 3px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 50%;
+  font-size: 15px;
+}
+input:focus,
+input:valid{
+  outline: 0;
+  border-bottom-color: lightseagreen;
 }
 
 #addbtn {
-  height: 20px;
-  width: 112px;
-  border-radius: 3px;
+  height: 35px;
+  width: 150px;
+  border-radius: 7px;
   color: white;
-  background-color: lightseagreen;
+  background: #34495e;
+  margin-left: 45%;
+
+}
+#addbtn:hover{
+  color: #222;
+  opacity: 70%;  z-index: 0;
+  background: #1abc9c;
+  border-radius: 8px;
+  transition: all .5s ease 0s;
 }
 
 #btn {
+  margin-top: 45px;
+  margin-left: 10px;
   height: 20px;
   width: 60px;
   border-radius: 3px;
   color: white;
-  background-color: lightseagreen;
+  background: #34495e;
+}
+#btn:hover{
+  color: #222;
+  opacity: 70%;  z-index: 0;
+  background: #1abc9c;
+  border-radius: 8px;
+  transition: all .5s ease 0s;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url(./freestocks-mw6Onwg4frY-unsplash.jpg);
+  /* backdrop-filter: blur(2px); */
+ background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
-.App {
-  text-align: center;
-}
-
-
-.App-header {
-  background-color: #222;
-  padding: 20px;
-  color: white;
-}
