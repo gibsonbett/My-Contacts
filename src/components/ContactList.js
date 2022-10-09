@@ -26,7 +26,6 @@ function ContactList({ contacts, search, setContacts, setSearch }) {
 
   return (
     <div className="contactlist">
-      ALL CONTACTS
       <input id="search" type="text" placeholder="Search Contact" onChange={handleSearch} />
       <i className=""></i>
       

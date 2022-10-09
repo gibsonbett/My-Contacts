@@ -6,14 +6,14 @@ function Contact({ firstname, lastname, phone, email, id, deleteContact }) {
   return (
     <div className="contact">
       <tr>
-        <td className="contact_item">Name:<br/> {firstname} {lastname}</td>
+        <td className="contact_item"><u style={{color: "#1C6758"}}>Name:</u><br/> {firstname} {lastname}</td>
         {/* <td className="contact_item">{lastname}</td> */}
-        <td className="contact_item">Mobile:<br/>  {phone}</td>
-        <td className="contact_item">Email:<br/>  {email}</td>
+        <td className="contact_item"><u style={{color: "#1C6758"}}>Mobile:</u><br/>  {phone}</td>
+        <td className="contact_item"><u style={{color: "#1C6758"}}>Email:</u><br/>  {email}</td>
         <hr />
       </tr>
       <div id="delete">
-        <button id="btn" onClick={() => deleteContact(id)}>
+        <button id="deletebtn" onClick={() => deleteContact(id)}>
           delete
         </button>
       </div>

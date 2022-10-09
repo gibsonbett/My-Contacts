@@ -110,7 +110,7 @@ input {
 input:focus,
 input:valid{
   outline: 0;
-  border-bottom-color: lightseagreen;
+  border-bottom-color: #1abc9c;
 }
 
 #addbtn {
@@ -130,10 +130,11 @@ input:valid{
   transition: all .5s ease 0s;
 }
 
-#btn {
-  margin-top: 45px;
+#deletebtn {
+
+  margin-top: 55px;
   margin-left: 10px;
-  height: 20px;
+  height: 50px;
   width: 60px;
   border-radius: 3px;
   color: white;
