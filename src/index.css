@@ -39,10 +39,11 @@
 
 .contact {
   margin-top: 30px;
+  width: 100%;
   padding: 10px;
   display: flex;
   justify-content: flex-start;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   border-collapse: collapse;
   /* background: #a0a8ae; */
   border-style: outset;
@@ -66,6 +67,9 @@
 .contact_item{
   color: black;
   padding: 10px;
+  border: 0;
+  border-bottom: 2px #34495e solid;
+  
 }
 
 #search{
@@ -79,11 +83,12 @@ tr {
   margin-top: 30px;
   padding: 10px;
   display: flex;
-  justify-content: flex-start;
-  margin-left: 100px;
-  border-collapse: collapse;
+  justify-content: center;
+  /* margin-left: 100px; */
+  /* border-collapse: collapse; */
   background: #a0a8ae;
-
+  /* opacity: 85%; */
+  border-radius: 5px;
 }
 
 label {
@@ -97,6 +102,7 @@ label {
   padding-top: 90px;
   height: 100vh;
   background: #b7c1c9;
+  
 }
 input {
   border-radius: 3px;
@@ -107,7 +113,8 @@ input {
   width: 50%;
   font-size: 15px;
 }
-input:focus,
+
+input:focus
 input:valid{
   outline: 0;
   border-bottom-color: #1abc9c;
@@ -131,8 +138,7 @@ input:valid{
 }
 
 #deletebtn {
-
-  margin-top: 55px;
+  margin-top: 50px;
   margin-left: 10px;
   height: 50px;
   width: 60px;
@@ -140,7 +146,7 @@ input:valid{
   color: white;
   background: #34495e;
 }
-#btn:hover{
+#deletebtn:hover{
   color: #222;
   opacity: 70%;  z-index: 0;
   background: #1abc9c;
